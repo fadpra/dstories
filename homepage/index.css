@@ -1,0 +1,361 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    margin:0;
+    overflow-x:hidden;
+}
+
+nav {
+    background-color: beige;
+    position: sticky;
+    width: 100%;
+    top:0;
+    right: 0;
+    left: 0;
+    display:flex;
+    justify-content:space-evenly;
+    padding: 10px;
+    align-items: center;
+    z-index: 9999;
+}
+
+.dstories {
+    background-color: aquamarine transparent;
+    width: fit-content;
+}
+
+nav .dstories a {
+    text-decoration: none;
+    color: rgb(151, 151, 121);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.links {
+    background-color: yellow transparent;
+    width: fit-content;
+}
+
+.links a {
+    color: rgb(151, 151, 121);
+    text-decoration: none;
+    font-weight: bold;
+    transition:0.25s ease-in-out;
+    padding: 10px;
+}
+
+.links a:hover {
+    background-color: rgb(99, 99, 79);
+    color:white
+}
+/* 
+@media screen and (max-width:550px){
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .hid1,.hid2 {
+        display:none;
+    }
+} */
+
+.fa-brands {
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    background-color: aquamarine transparent;
+    background-image: url("Hero.png");
+    height:100vh;
+    background-position: center;
+    background-size:1000px 600px;
+    background-repeat: no-repeat;
+    margin:auto
+}
+
+.hero-content {
+    display: block;
+    margin: auto;
+    background-color: aqua transparent;
+    width: fit-content;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+@media screen and (max-width:800px) {
+    .hero-content {
+        top: 70%
+    }
+    .hero {
+        background-size: 700px 400px;
+        margin-top: -50px
+    }
+}
+
+.hero-text {
+    color: rgb(255, 209, 42);
+    filter: drop-shadow(2px 5px 2px black);
+}
+
+.hero-content h1 {
+    font-size: 40px;
+}
+
+.hero-content a {
+    color:black ;
+    background-color:rgb(255, 209, 42) ;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.25s ease-in-out;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.hero-content a:hover {
+    opacity: 0.4;
+}
+/* 
+
+@media screen and (max-width:550px){
+    .hero {
+        margin-top: 45px;
+        width: 100%
+    }
+    .hero-content {
+        background-color: aquamarine transparent;
+        width: 90%;
+    }
+    .hero-content h1 {
+        font-size: 30px;
+    }
+    .hero-content h2 {
+        font-size: 20px;
+    }
+} */
+
+#gra1 {
+    background-image: linear-gradient(rgba(255,255,255,.5),rgba(154, 120, 69, 0.822));
+    height: 40px;
+}
+
+.catus {
+    background-image: url(aboutus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: auto;
+    padding: 20px;
+    max-width: 100%;
+}
+.container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.container .category {
+    width: fit-content;
+    background-color: blanchedalmond transparent;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width:800px){
+    .container .category {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.container .product {
+    display: grid;   
+    background-color: rgb(151, 151, 121);
+    width: fit-content;
+    margin: 10px;
+    box-shadow: 0px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
+    transition: 0.25s ease-in-out;
+    text-decoration: none;
+}
+
+.product:hover {
+    opacity: 0.8;
+}
+
+.container .product img {
+    width: 100%;
+    height: 200px;
+}
+
+#bagcat img {
+    filter: brightness(110%);
+}
+
+.product h2, h3 {
+    text-align: center;
+    color: rgb(79, 79, 63);
+}
+
+.product h2 {
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+.product h3 {
+    background-color:rgb(99, 99, 79) ;
+    cursor: pointer;
+    color: beige;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    padding: 5px;
+}
+/* 
+@media screen and (max-width:550px){
+    .container .category {
+        grid-template-columns: 1fr;
+    }
+    .container .product {
+        scale: 1.5;
+        margin: 80px 0px;
+    }
+    .catus {
+        margin:auto;
+        width: 100%
+    }
+} */
+
+#about {
+    height: 40px;
+}
+
+.about {
+    padding: 10px;
+}
+
+.about h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-con {
+    background-color: rgba(255, 239, 171, 0.5);
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px 0.5px rgba(0, 0, 0, 0.5);
+    height: fit-content;
+}
+
+.about-text {
+    padding: 10px;
+    width: fit-content;
+}
+
+.about-text h2 {
+    line-height: 1.2;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+.about-img {
+    background-color: darkblue transparent;
+    padding: 10px;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+}
+
+@media screen and (max-width:800px){
+    .about-con {
+        width: fit-content;
+    }
+
+    .about-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .about-text h2 {
+        font-size: 15px;
+    }
+}
+
+/* @media screen and (max-width:550px){
+    .about-img {
+        grid-area: img;
+    }
+    .about-img img {
+        border-radius: 15px 15px 0px 0px;
+    }
+    .about-text {
+        grid-area: abtcon;
+        margin-bottom: 5px;
+    }
+    .about-con {
+        grid-template-areas: 'img img'
+                             'abtcon abtcon';
+    }
+} */
+
+footer {
+    background-color: beige;
+    height: fit-content;
+    padding: 10px;
+}
+
+.contacts {
+    background-color: aquamarine transparent;
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+}
+
+footer h5 {
+    text-align: center;
+}
+
+footer h5 a {
+    text-decoration: none;
+    color: red
+}
+
+.contacts a {
+    text-decoration: none;
+}
+
+footer h2 {
+    color: rgb(151, 151, 121);
+    text-decoration: underline;
+    text-align: center;
+}
+
+.contacts h3 {
+    padding: 5px;    transition: 0.25s ease-in-out;
+    color: rgb(151, 151, 121);
+    margin: 5px 0px;
+}
+
+.contacts h3:hover {
+    border-radius: 5px;
+    opacity: 0.5;
+}
+
+/* rgb(151, 151, 121) */
